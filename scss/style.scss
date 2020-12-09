@@ -455,9 +455,9 @@ h4 {
     .ba-plans-block {
       &__inner {
         margin: auto;
-        border: 2px solid #dddddd;
-        border-radius: 10px;
         background: #fff;
+        border-radius: 10px;
+        border: 2px solid #dddddd;
         width: 330px;
         display: flex;
         flex-direction: column;
@@ -468,6 +468,9 @@ h4 {
         @media screen and (min-width: 640px) {
           padding: 80px 15px 50px 15px;
         }
+      }
+      &__inner:hover {
+        border-color: #f53838;
       }
       &__title {
         margin-top: 30px;
@@ -523,9 +526,6 @@ h4 {
         box-shadow: 0px 20px 20px -5px rgba(245, 56, 56, 0.35);
         color: #fff;
       }
-    }
-    .ba-plans-block:hover {
-      border-color: #f53838;
     }
     .ba-plans-block + .ba-plans-block {
       margin-top: 30px;
